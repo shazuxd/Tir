@@ -1,0 +1,20 @@
+[app]
+title = OTP Forwarder
+package.name = otpforwarder
+package.domain = org.example
+source.dir = .
+source.include_exts = py,png,jpg,kv,atlas,json
+version = 1.0
+requirements = python3,kivy,requests,pyjnius,android
+orientation = portrait
+osx.python_version = 3
+osx.kivy_version = 2.1.0
+fullscreen = 0
+android.permissions = RECEIVE_SMS,READ_SMS,INTERNET,RECEIVE_BOOT_COMPLETED
+android.api = 31
+android.minapi = 21
+android.ndk = 25b
+p4a.branch = master
+android.allow_backup = False
+android.wakelock = True
+services = service:service.py, boot:boot.py
